@@ -1,0 +1,429 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+.container-conpanyheader {
+    display: flex;
+    height: 30vh;
+    width: 100%;
+}
+
+.companylogo {
+    height: 25vh;
+    width: 20%;
+    margin: 5px;
+
+
+}
+
+.companylogo {
+    height: 25vh;
+    width: 25vh;
+    margin-bottom: 10px;
+}
+
+.companylogo img {
+    height: 25vh;
+    width: 25vh;
+    border: burlywood;
+    border-radius: 40px;
+
+}
+
+.company-name {
+    height: 25vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    align-items: center;
+    color: #333;
+}
+
+.company-name h1 {
+    align-items: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: inline-block;
+    color: #007bff;
+}
+
+.company-name p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.socialmedia-links {
+    width: 30%;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.social-icons a {
+    color: #333;
+    /* Adjust the color of the icons */
+    margin-right: 10px;
+    /* Adjust spacing between icons */
+    text-decoration: none;
+    /* Remove underline from the links */
+    font-size: 24px;
+    /* Adjust icon size */
+}
+
+/* Optionally, you can add hover effects */
+.social-icons a:hover {
+    color: #007bff;
+    /* Change color on hover */
+}
+
+
+.container-searchbar {
+    margin: 10px;
+}
+
+input[type=text] {
+    width: 80%;
+    padding: 1px;
+    height: 7vh;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    color: #ddd;
+    margin: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    /* background-color: #4caf50; */
+    /* color: white; */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-content: flex-end;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Basic Navbar Styles */
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    color: white;
+    /*display color white */
+    font-size: 23px;
+    align-content: space-around;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.navbar a {
+    float: left;
+    /*align links horizentelly*/
+    display: block;
+    /* make links as block*/
+    text-align: center;
+    /*center text */
+    padding: 0px 20px;
+    /*padding */
+    text-decoration: none;
+    /*remove underline */
+    list-style: none;
+
+}
+
+.navbar ul {
+    font-weight: bold;
+    cursor: pointer;
+    list-style: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+    /*color on hover */
+    cursor: pointer;
+}
+
+/* Responsive Navbar */
+@media screen and (max-width :600px) {
+    .navbar a {
+        float: none;
+        /*remove float for mobile */
+        display: block;
+        /*display links as blocks*/
+        text-align: left;
+        /*align text left */
+    }
+}
+
+.navbar ul {
+
+    display: flex;
+
+}
+
+.header navbar ul li {
+
+    display: flex;
+
+
+}
+
+.container-uppersection {
+    display: flex;
+    width: 100%;
+    height: 60vh;
+}
+
+.rightsection {
+    width: 70%;
+    background: gray;
+    height: 60vh;
+}
+
+.slider {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    /* Adjust height as needed */
+    position: relative;
+}
+
+.slide {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right : 5px;
+    width: 100%;
+    height: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensure the image covers the entire slide */
+}
+
+.slide p {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Add a semi-transparent background for text readability */
+    padding: 5px;
+}
+
+.slide.active {
+    display: block;
+    animation: slideIn 1s ease forwards;
+}
+
+@keyframes slideIn {
+    from {
+        left: 100%;
+        /* Start from right side */
+    }
+
+    to {
+        left: 0;
+        /* Slide in to left */
+    }
+}
+
+.leftsection {
+    width: 30%;
+    overflow: hidden;
+    margin: 5px;
+}
+
+.container-intro {
+    height: 50vh;
+    display : flex;
+    width : 100%;
+    overflow : hidden;
+}
+
+.introduction {
+    height: 50vh;;
+    margin: 5px;
+    width :70%;
+    display : flex;
+}
+
+.profilephoto{
+    width :30%;
+    height : 50vh;
+}
+.profilephoto img{
+    width :20px,30px;
+    height : 50vh;
+    margin : 2px,2px;
+}
+.profile-description{
+    color: black;
+    background-color: lightslategray;
+    height: 50vh;;
+    margin: 5px,4px;
+    color: #f4f4f4;
+    width :100%; 
+    padding :4px,4px;
+}
+
+.futureplan{
+    width : 30%;
+    margin : 5px;
+    height : 30vh;
+}
+
+.qualification-workexperiance {
+    display: flex;
+    width: 100%;
+    height: 60vh;
+}
+.container-qualification {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width:50%;
+}
+
+.container-qualification h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.qualification {
+    list-style-type: none;
+    padding: 0;
+}
+
+.qualification li {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-weight :bold;
+}
+
+.qualification p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.container-experience {
+    background-color: #f9f9f9;
+    width:50%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.workingexperiance {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.Position {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.container-experience hr {
+    margin: 10px 0;
+    border: 1px solid #ccc;
+}
+
+
+.container-lowersection{
+    display: flex;
+}
+
+.lower-right {
+    width:50%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.lower-right h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.training {
+    margin-top: 10px;
+}
+
+.training-name {
+    list-style-type:decimal-leading-zero;
+    padding: 0;
+    font-size:20px;
+}
+
+.training-name li {
+    margin-bottom: 5px;
+}
+
+.computertraining {
+    color: #007bff;
+}
+
+.accountingtraining {
+    color: #28a745;
+}
+
+.pearlstraining {
+    color: #dc3545;
+}
+
+.necosplustraining {
+    color: #ffc107;
+}
+
+.microbankertraining {
+    color: #17a2b8;
+}
+
+.lower-left{
+    width:50%;
+    align-items:left;
+}
+.skill {
+    margin-bottom: 20px;
+    width :100%;
+}
+
+.skill-name {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.skill-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.skill-level {
+    height: 100%;
+    background-color: #007bff; /* Adjust color based on skill level */
+    border-radius: 5px;
+}
